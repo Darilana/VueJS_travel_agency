@@ -9,7 +9,7 @@ const dropdownMenu = {
             },
         };
     },
-  template: `
+    template: `
    <b-navbar-nav>
       <b-nav-item class="ml-3" v-for = "(item, key) in mainMenuOptions" :key="item" :to="{ name: item }">{{key}}</b-nav-item>
   </b-navbar-nav>
@@ -17,8 +17,8 @@ const dropdownMenu = {
 };
 
 const Tour = {
-  props: ['id'],
-  template: `<div>
+    props: ['id'],
+    template: `<div>
   <b-tabs class="text-center">
     <b-tab title="Gallery" active>
       <b-carousel id="carousel1"
@@ -50,55 +50,55 @@ const Tour = {
     <div class='contact' v-if="currentCity.description">Contact us <router-link :to="{ name: 'contactUs' }">here</router-link> if you are interested!</div>
 
   </div>`,
-  data: function () {
-    return {
-      slide: 0,
-      sliding: null,
-      showVideo: false,
-      images: {
-        vienna: ["assets/img/vienna_1.jpg", "assets/img/vienna_2.jpg", "assets/img/vienna_3.jpg"],
-        amsterdam: ["assets/img/amsterdam_1.jpg", "assets/img/amsterdam_2.jpg", "assets/img/amsterdam_3.jpg"],
-        florence: ["assets/img/florence_1.jpg", "assets/img/florence_2.jpg", "assets/img/florence_3.jpg"]
-      }
-    };
-  },
-  mounted: function () {
-    this.$store.dispatch ('fetchTour', this.id);
-  },
+    data: function () {
+        return {
+            slide: 0,
+            sliding: null,
+            showVideo: false,
+            images: {
+                vienna: ["assets/img/vienna_1.jpg", "assets/img/vienna_2.jpg", "assets/img/vienna_3.jpg"],
+                amsterdam: ["assets/img/amsterdam_1.jpg", "assets/img/amsterdam_2.jpg", "assets/img/amsterdam_3.jpg"],
+                florence: ["assets/img/florence_1.jpg", "assets/img/florence_2.jpg", "assets/img/florence_3.jpg"]
+            }
+        };
+    },
+    mounted: function () {
+        this.$store.dispatch ('fetchTour', this.id);
+    },
 
-  destroyed: function () {
-    this.$store.commit('setCurrentTour', 
-    {
-      description: null,
-    });
-  },
+    destroyed: function () {
+        this.$store.commit('setCurrentTour',
+            {
+                description: null,
+            });
+    },
 
-  computed: {
-    currentCity: function () {
-      return this.$store.state.currentTour;
+    computed: {
+        currentCity: function () {
+            return this.$store.state.currentTour;
+        },
+        // ...mapGetters([
+        //   'currentCity'
+        // ])
+        videoUrl: function () {
+            return "assets/video/" + this.id + ".mp4";
+        },
+        imageLinks: function () {
+            return this.images[this.id];
+        }
     },
-    // ...mapGetters([
-    //   'currentCity'
-    // ])
-    videoUrl: function () {
-      return "assets/video/" + this.id + ".mp4";
-    },
-    imageLinks: function () {
-      return this.images[this.id];
+    methods: {
+        onSlideStart (slide) {
+            this.sliding = true
+        },
+        onSlideEnd (slide) {
+            this.sliding = false
+        }
     }
-  },
-   methods: {
-    onSlideStart (slide) {
-      this.sliding = true
-    },
-    onSlideEnd (slide) {
-      this.sliding = false
-    }
-  }
 };
 
 const Landing = {
-  template: `
+    template: `
     <div class="col align-self-center">
         <video playsinline autoplay muted loop id="video-background">
             <source src="assets/video/landing/cover.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -111,10 +111,16 @@ const Landing = {
         </b-jumbotron>
         </div>
     </div>`,
+    mounted () {
+        this.$store.commit('setShowFooter', false);
+    },
+    destroyed () {
+        this.$store.commit('setShowFooter', true);
+    }
 };
 
 const aboutUs = {
-  template: `<div class="card">
+    template: `<div class="card">
     <div class="card-body">
       <h4 class="card-title">About us</h4>
       <p class="card-text">We are travel agancy 'Super tour for you'. Our company appeared in 1999 and was the first modern agency that organizes top class journeys. If you want to travel around the world safely and worry about nothing - contact 'Super tour for you' agency. Our team of processionals will organize the bext trip for you!</p>
@@ -124,7 +130,7 @@ const aboutUs = {
 };
 
 const contactUs = {
-  template: `<div class="row  justify-content-center">
+    template: `<div class="row  justify-content-center">
   <div class="col-12 col-md-6">
     <div v-if='formSubmited'>
       <div class="alert alert-success" role="alert">
@@ -176,33 +182,33 @@ const contactUs = {
     </b-form>
     </div>
   </div>`,
-  data () {
-    return {
-      formSubmited: false,
-      form: {
-        email: '',
-        name: '',
-        priority: null,
-        checked: false,
-        text: '',
-      },
-      priority: [
-        { text: 'Select One', value: null },
-        'Urgent', 'Critical', 'Normal', 'Minor'
-      ],
-      show: true
-    }
-  },
-  methods: {
-    onSubmit (evt) {
-      evt.preventDefault();
-      this.formSubmited = true;
+    data () {
+        return {
+            formSubmited: false,
+            form: {
+                email: '',
+                name: '',
+                priority: null,
+                checked: false,
+                text: '',
+            },
+            priority: [
+                { text: 'Select One', value: null },
+                'Urgent', 'Critical', 'Normal', 'Minor'
+            ],
+            show: true
+        }
     },
-  }
+    methods: {
+        onSubmit (evt) {
+            evt.preventDefault();
+            this.formSubmited = true;
+        },
+    }
 };
 
 const tourList = {
-  template: `<div class="d-flex flex-md-row flex-column justify-content-between align-items-center align-items-md-stretch">
+    template: `<div class="d-flex flex-md-row flex-column justify-content-between align-items-center align-items-md-stretch">
       <b-card :title="city.title" v-for='city in toursInfo' :key="city.id"
               :img-src="images[city.id]"
               img-alt="Image"
@@ -218,30 +224,30 @@ const tourList = {
         </div>    
       </b-card>
   </div>`,
-  data () {
-    return {
-      images: {
-        vienna: 'assets/img/main/1.jpg',
-        amsterdam: 'assets/img/main/2.jpg',
-        florence: 'assets/img/main/3.jpg'
-      },
+    data () {
+        return {
+            images: {
+                vienna: 'assets/img/main/1.jpg',
+                amsterdam: 'assets/img/main/2.jpg',
+                florence: 'assets/img/main/3.jpg'
+            },
+        }
+    },
+    mounted: function () {
+        this.$store.dispatch ('fetchTourList');
+    },
+    computed: {
+        toursInfo: function () {
+            return this.$store.state.tourList;
+        }
     }
-  },
-  mounted: function () {
-    this.$store.dispatch ('fetchTourList');
-  },
-  computed: {
-    toursInfo: function () {
-      return this.$store.state.tourList;
-    }
-  }
 };
 
 const myHeader = {
-  components: {
-    dropdownMenu,
-  },
-  template: `<b-navbar toggleable="md" type="dark" variant="info">
+    components: {
+        dropdownMenu,
+    },
+    template: `<b-navbar toggleable="md" type="dark" variant="info">
   <div class="container">
 
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
@@ -261,122 +267,131 @@ const myHeader = {
 };
 
 const myFooter = {
-  template: `<footer><hr>
+    template: `<footer v-show="showFooter"><hr>
     <div class="container">
       <address>&copy; All rights reserved 2017</address>
       <div class="social">
-        <a href="https://github.com/" target="_blank"><i class="fa fa-github-alt"></i></a>
+        <a href="https://github.com/Darilana/Vue.js-hw/tree/master/Project_vue" target="_blank"><i class="fa fa-github-alt"></i></a>
       </div>
     </div>
-  </footer>`
+  </footer>`,
+    computed: {
+        showFooter: function () {
+            return this.$store.state.showFooter;
+        }
+    }
 }
 
 var PulseLoader = VueSpinner.PulseLoader;
 
 const Spinner = {
-  components: {
-    PulseLoader
-  },
-  template: `<pulse-loader :loading="showLoader" color="grey" size="20px" class="loader"></pulse-loader>`,
-  computed: {
-    showLoader: function () {
-      return this.$store.state.showLoader;
+    components: {
+        PulseLoader
+    },
+    template: `<pulse-loader :loading="showLoader" color="grey" size="20px" class="loader"></pulse-loader>`,
+    computed: {
+        showLoader: function () {
+            return this.$store.state.showLoader;
+        }
     }
-  }
 }
 
 const store = new Vuex.Store({
-  state: {
-    currentTour: {
-      description: null,
+    state: {
+        currentTour: {
+            description: null,
+        },
+        tourList: [],
+        showLoader: false,
+        showFooter: true,
     },
-    tourList: [],
-    showLoader: false
-  },
-  mutations: {
-    setCurrentTour (state, tourInfo) {
-      state.currentTour = tourInfo;
+    mutations: {
+        setCurrentTour (state, tourInfo) {
+            state.currentTour = tourInfo;
+        },
+        setTourList (state, tourList) {
+            state.tourList = tourList;
+        },
+        setShowLoader (state, enabled) {
+            state.showLoader = enabled;
+        },
+        setShowFooter(state, enabled) {
+            state.showFooter = enabled;
+        }
     },
-    setTourList (state, tourList) {
-      state.tourList = tourList;
+    actions: {
+        fetchTour ({ commit }, tourName) {
+            commit('setShowLoader', true);
+            Vue.http.get('https://demo2157898.mockable.io/tour/' + tourName).then(function (response) {
+                    commit('setCurrentTour', response.body);
+                    commit('setShowLoader', false);
+                },
+                function (response) {
+                    alert('An error occurred, please contact site administrator.');
+                    commit('setShowLoader', false);
+                });
+        },
+        fetchTourList ({ commit }) {
+            commit('setShowLoader', true);
+            Vue.http.get('https://demo2157898.mockable.io/tourList').then(function (response) {
+                    commit('setTourList', response.body);
+                    commit('setShowLoader', false);
+                },
+                function (response) {
+                    alert('An error occurred, please contact site administrator.');
+                    commit('setShowLoader', false);
+                });
+        },
     },
-    setShowLoader (state, enabled) {
-      state.showLoader = enabled;
+    getters: {
+        currentTour: function (state) {
+            return state.currentTour;
+        }
     }
-  },
-  actions: {
-    fetchTour ({ commit }, tourName) {
-      commit('setShowLoader', true);
-      Vue.http.get('https://demo2157898.mockable.io/tour/' + tourName).then(function (response) {
-        commit('setCurrentTour', response.body);
-        commit('setShowLoader', false);
-      }, 
-      function (response) {
-        alert('An error occurred, please contact site administrator.');
-        commit('setShowLoader', false);
-      });
-    },
-    fetchTourList ({ commit }) {
-      commit('setShowLoader', true);
-      Vue.http.get('https://demo2157898.mockable.io/tourList').then(function (response) {
-        commit('setTourList', response.body);
-        commit('setShowLoader', false);
-      }, 
-      function (response) {
-        alert('An error occurred, please contact site administrator.');
-        commit('setShowLoader', false);
-      });
-    },
-  },
-  getters: {
-    currentTour: function (state) {
-      return state.currentTour;
-    }
-  }
 })
 
 
 const router = new VueRouter({
-  routes: [
-    { 
-      path: '/tour/:id', 
-      component: Tour, 
-      props: true,
-      name: 'tour',
-    },
-    { 
-      path: '/', 
-      component: Landing, 
-      name: 'landing',
-    },
-    { 
-      path: '/aboutUs', 
-      component: aboutUs, 
-      name: 'aboutUs',
-    },
-    { 
-      path: '/contactUs', 
-      component: contactUs, 
-      name: 'contactUs',
-    },
-    { 
-      path: '/tourList', 
-      component: tourList, 
-      name: 'tourList',
-    }
-  ]
+    routes: [
+        {
+            path: '/tour/:id',
+            component: Tour,
+            props: true,
+            name: 'tour',
+        },
+        {
+            path: '/',
+            component: Landing,
+            name: 'landing',
+        },
+        {
+            path: '/aboutUs',
+            component: aboutUs,
+            name: 'aboutUs',
+        },
+        {
+            path: '/contactUs',
+            component: contactUs,
+            name: 'contactUs',
+        },
+        {
+            path: '/tourList',
+            component: tourList,
+            name: 'tourList',
+        }
+    ]
 });
 
 
 const app = new Vue ( {
-  router,
-  store,
-  components: {
-    myHeader,
-    myFooter,
-    Spinner,
-  },
-  template: `<div class="d-flex flex-column main-wrapper">           
+    router,
+    store,
+    components: {
+        myHeader,
+        myFooter,
+        Spinner,
+    },
+    template: `<div class="d-flex flex-column main-wrapper">           
                 <my-header>
                 </my-header>
                 <main class="container flex-grow">
@@ -386,5 +401,5 @@ const app = new Vue ( {
               <my-footer>
               </my-footer>
             </div> `
- 
+
 }).$mount('#app');  
