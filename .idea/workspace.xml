@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da7c63c0-ee4b-4c27-8dae-bab21fb1e89b" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1092">
+              <caret line="337" column="0" lean-forward="true" selection-start-line="337" selection-start-column="0" selection-end-line="337" selection-end-column="0" />
+              <folding>
+                <marker date="1512764241363" expanded="true" signature="21:462" ph="{&quot;template&quot;: `&#10;   &lt;b-navbar-nav&gt;&#10;      &lt;b-nav-item class=&quot;ml-3&quot; v-for = &quot;(item, key) in mainMenuOptions&quot; :key=&quot;item&quot; :to=&quot;{ name: item }&quot;&gt;{{key}}&lt;/b-nav-item&gt;&#10;  &lt;/b-navbar-nav&gt;&#10;  `...}" />
+                <marker date="1512764241363" expanded="true" signature="45:279" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="62:272" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="124:261" ph="{&quot;About Us&quot;: &quot;aboutUs&quot;...}" />
+                <marker date="1512764241363" expanded="true" signature="311:455" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="478:2721" ph="{&quot;template&quot;: `&lt;div&gt;&#10;  &lt;b-tabs class=&quot;text-center&quot;&gt;&#10;    &lt;b-tab title=&quot;Gallery&quot; active&gt;&#10;      &lt;b-carousel id=&quot;carousel1&quot;&#10;                  style=&quot;text-shadow: 1px 1px 2px ##333;&quot;&#10;                  controls&#10;                  indicators&#10;                  background=&quot;##ababab&quot;&#10;                  :interval=&quot;4000&quot;&#10;                  img-width=&quot;1024&quot;&#10;                  img-height=&quot;480&quot;&#10;                  v-model=&quot;slide&quot;&#10;                  @sliding-start=&quot;onSlideStart&quot;&#10;                  @sliding-end=&quot;onSlideEnd&quot;&#10;      &gt;&#10;&#10;        &lt;b-carousel-slide v-for='item in imageLinks' :key=&quot;item&quot; :img-src=&quot;item&quot;&gt;&#10;        &lt;/b-carousel-slide&gt;&#10;      &lt;/b-carousel&gt;&#10;  &lt;/b-tab&gt;&#10;    &lt;b-tab title=&quot;Video tour&quot; &gt;&#10;      &lt;video  class=&quot;container&quot; controls&gt;&#10;        &lt;source :src=&quot;videoUrl&quot; type=&quot;video/mp4&quot;&gt;&#10;      &lt;/video&gt;&#10;  &lt;/b-tab&gt;&#10;  &lt;/b-tabs&gt;&#10;    &lt;ul class=&quot;list-group&quot;&gt;&#10;      &lt;li class=&quot;list-group-item&quot; v-for='(item, key) in currentCity.description' v-html=&quot;key + ': ' + item&quot;&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;    &lt;div class='contact' v-if=&quot;currentCity.description&quot;&gt;Contact us &lt;router-link :to=&quot;{ name: 'contactUs' }&quot;&gt;here&lt;/router-link&gt; if you are interested!&lt;/div&gt;&#10;&#10;  &lt;/div&gt;`...}" />
+                <marker date="1512764241363" expanded="true" signature="514:1626" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="545:1308" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="580:1146" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="614:1135" ph="..." />
+                <marker date="1512764241363" expanded="false" signature="640:670" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="1087:1115" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="1177:1296" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="1220:1285" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="1336:1460" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="1650:2076" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="1663:2071" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="1740:2065" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2101:2155" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2183:2269" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2231:2263" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2284:2582" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2315:2366" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2372:2423" ph="//..." />
+                <marker date="1512764241363" expanded="true" signature="2450:2506" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2536:2578" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2596:2719" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2623:2656" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2681:2715" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="2740:3589" ph="{&quot;template&quot;: `&#10;    &lt;div class=&quot;col align-self-center&quot;&gt;&#10;        &lt;video playsinline autoplay muted loop id=&quot;video-background&quot;&gt;&#10;            &lt;source src=&quot;assets/video/landing/cover.mp4&quot; type=&quot;video/mp4&quot; /&gt;Your browser does not support the video tag. I suggest you upgrade your browser.&#10;            &lt;source src=&quot;assets/video/landing/cover.webm&quot; type=&quot;video/webm&quot; /&gt;Your browser does not support the video tag. I suggest you upgrade your browser.&#10;        &lt;/video&gt;&#10;        &lt;div class=&quot;landing-container col align-self-center&quot;&gt;&#10;        &lt;b-jumbotron header-level=&quot;4&quot; header=&quot;Cheap Happiness&quot; lead=&quot;Tour agency for you. Unforgettable journeys for affordable prices!&quot; class=&quot;landing-info&quot;&gt;&#10;          &lt;p&gt;&lt;/p&gt;&#10;          &lt;b-btn variant=&quot;danger&quot; :to=&quot;{ name: 'tourList' }&quot; size=&quot;lg&quot;&gt;Pick your trip now!&lt;/b-btn&gt;&#10;        &lt;/b-jumbotron&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;`...}" />
+                <marker date="1512764241363" expanded="true" signature="2794:3584" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="2864:3197" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="3259:3573" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="3418:3558" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="3608:4162" ph="{&quot;template&quot;: `&lt;div class=&quot;card&quot;&gt;&#10;    &lt;div class=&quot;card-body&quot;&gt;&#10;      &lt;h4 class=&quot;card-title&quot;&gt;About us&lt;/h4&gt;&#10;      &lt;p class=&quot;card-text&quot;&gt;We are travel agancy 'Super tour for you'. Our company appeared in 1999 and was the first modern agency that organizes top class journeys. If you want to travel around the world safely and worry about nothing - contact 'Super tour for you' agency. Our team of processionals will organize the bext trip for you!&lt;/p&gt;&#10;    &lt;/div&gt;&#10;    &lt;img class=&quot;card-img-bottom&quot; src=&quot;assets/img/location.png&quot; alt=&quot;Card image cap&quot;&gt;&#10;  &lt;/div&gt;`...}" />
+                <marker date="1512764241363" expanded="true" signature="3640:4158" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="3668:4064" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="4183:6544" ph="{&quot;template&quot;: `&lt;div class=&quot;row  justify-content-center&quot;&gt;&#10;  &lt;div class=&quot;col-12 col-md-6&quot;&gt;&#10;    &lt;div v-if='formSubmited'&gt;&#10;      &lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;&#10;        &lt;h4 class=&quot;alert-heading&quot;&gt;Thank you!&lt;/h4&gt;&#10;          &lt;p&gt;Your message has been sent. We will get back to you as soon as possible.&lt;/p&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;b-form v-else @submit=&quot;onSubmit&quot;&gt;&#10;      &lt;b-form-group id=&quot;exampleInputGroup1&quot;&#10;                    label=&quot;Email address:&quot;&#10;                    description=&quot;We'll never share your email with anyone else.&quot;&gt;&#10;        &lt;b-form-input id=&quot;exampleInput1&quot;&#10;                      type=&quot;email&quot;&#10;                      v-model=&quot;form.email&quot;&#10;                      required&#10;                      placeholder=&quot;Enter email&quot;&gt;&#10;        &lt;/b-form-input&gt;&#10;      &lt;/b-form-group&gt;&#10;      &lt;b-form-group id=&quot;exampleInputGroup2&quot; label=&quot;Your Name:&quot;&gt;&#10;        &lt;b-form-input id=&quot;exampleInput2&quot;&#10;                      type=&quot;text&quot;&#10;                      v-model=&quot;form.name&quot;&#10;                      required&#10;                      placeholder=&quot;Enter name&quot;&gt;&#10;        &lt;/b-form-input&gt;&#10;      &lt;/b-form-group&gt;&#10;      &lt;b-form-group id=&quot;exampleInputGroup3&quot; label=&quot;Priority:&quot;&gt;&#10;        &lt;b-form-select id=&quot;exampleInput3&quot;&#10;                      :options=&quot;priority&quot;&#10;                      required&#10;                      v-model=&quot;form.priority&quot;&gt;&#10;        &lt;/b-form-select&gt;&#10;      &lt;/b-form-group&gt;&#10;      &lt;b-form-group&gt;&#10;       &lt;b-form-textarea id=&quot;textarea1&quot;&#10;                     v-model=&quot;form.text&quot;&#10;                     placeholder=&quot;Enter something&quot;&#10;                     :rows=&quot;3&quot;&#10;                     :max-rows=&quot;6&quot;&gt;&#10;    &lt;/b-form-textarea&gt;&#10;    &lt;/b-form-group&gt;&#10;&#10;      &lt;b-form-group id=&quot;exampleGroup4&quot;&gt;&#10;        &lt;b-form-checkbox v-model=&quot;form.checked&quot; id=&quot;exampleInput4&quot;&gt;&#10;          Send me a copy of my question&#10;        &lt;/b-form-checkbox&gt;&#10;      &lt;/b-form-group&gt;&#10;      &lt;b-button type=&quot;submit&quot; variant=&quot;primary&quot;&gt;Submit&lt;/b-button&gt;&#10;    &lt;/b-form&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;`...}" />
+                <marker date="1512764241363" expanded="true" signature="4238:6108" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="4270:6099" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="4300:4517" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="4353:4506" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="4556:6088" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="4601:4970" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="4767:4948" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="5034:5276" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="5076:5254" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="5339:5548" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="5382:5526" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="5569:5810" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="5609:5790" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="5851:6008" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="5919:5986" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="6122:6436" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="6135:6432" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="6176:6288" ph="{&quot;name&quot;: ''...}" />
+                <marker date="1512764241363" expanded="true" signature="6306:6408" ph="[...]" />
+                <marker date="1512764241363" expanded="true" signature="6449:6542" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="6470:6537" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="6564:7572" ph="{&quot;template&quot;: `&lt;div class=&quot;d-flex flex-md-row flex-column justify-content-between align-items-center align-items-md-stretch&quot;&gt;&#10;      &lt;b-card :title=&quot;city.title&quot; v-for='city in toursInfo' :key=&quot;city.id&quot;&#10;              :img-src=&quot;images[city.id]&quot;&#10;              img-alt=&quot;Image&quot;&#10;              img-top&#10;              tag=&quot;article&quot;&#10;              style=&quot;max-width: 20rem;&quot;&#10;              class=&quot;mb-2&quot;&gt;&#10;        &lt;p class=&quot;card-text&quot;&gt;&#10;          {{city.description}}&#10;        &lt;/p&gt;&#10;        &lt;div slot=&quot;footer&quot;&gt;&#10;          &lt;b-button :to='{ name: city.name, params: {id: city.id }}' variant=&quot;primary&quot;&gt;Check the tour&lt;/b-button&gt;&#10;        &lt;/div&gt;    &#10;      &lt;/b-card&gt;&#10;  &lt;/div&gt;`...}" />
+                <marker date="1512764241363" expanded="true" signature="6688:7211" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="6764:7202" ph="..." />
+                <marker date="1512764241363" expanded="false" signature="6907:6924" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="6982:7026" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="7054:7182" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="7225:7401" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="7238:7397" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="7254:7390" ph="{&quot;vienna&quot;: 'assets/img/main/1.jpg'...}" />
+                <marker date="1512764241363" expanded="true" signature="7426:7475" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="7489:7570" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="7518:7566" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="7592:8052" ph="{&quot;template&quot;: `&lt;b-navbar toggleable=&quot;md&quot; type=&quot;dark&quot; variant=&quot;info&quot;&gt;&#10;  &lt;div class=&quot;container&quot;&gt;&#10;&#10;  &lt;b-navbar-toggle target=&quot;nav_collapse&quot;&gt;&lt;/b-navbar-toggle&gt;&#10;&#10;  &lt;b-navbar-brand :to=&quot;{ name: 'landing' }&quot;&gt;&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;&lt;/b-navbar-brand&gt;&#10;&#10;  &lt;b-collapse is-nav id=&quot;nav_collapse&quot;&gt;&#10;&#10;    &lt;b-navbar-nav class=&quot;ml-auto&quot;&gt;&#10;&#10;      &lt;dropdown-menu&gt;&lt;/dropdown-menu&gt;&#10;    &lt;/b-navbar-nav&gt;&#10;&#10;  &lt;/b-collapse&gt;&#10;  &lt;/div&gt;&#10;&lt;/b-navbar&gt;`...}" />
+                <marker date="1512764241363" expanded="true" signature="7608:7631" ph="{&quot;dropdownMenu&quot;: dropdownMenu...}" />
+                <marker date="1512764241363" expanded="true" signature="7698:8048" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="7724:8036" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="7915:8027" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="7951:8010" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="8072:8341" ph="{&quot;template&quot;: `&lt;footer&gt;&lt;hr&gt;&#10;    &lt;div class=&quot;container&quot;&gt;&#10;      &lt;address&gt;&amp;copy; All rights reserved 2017&lt;/address&gt;&#10;      &lt;div class=&quot;social&quot;&gt;&#10;        &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-github-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/footer&gt;`...}" />
+                <marker date="1512764241363" expanded="true" signature="8094:8337" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="8126:8325" ph="..." />
+                <marker date="1512764241363" expanded="false" signature="8143:8149" ph="©" />
+                <marker date="1512764241363" expanded="true" signature="8210:8314" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="8402:8646" ph="{&quot;template&quot;: `&lt;pulse-loader :loading=&quot;showLoader&quot; color=&quot;grey&quot; size=&quot;20px&quot; class=&quot;loader&quot;&gt;&lt;/pulse-loader&gt;`...}" />
+                <marker date="1512764241363" expanded="true" signature="8418:8439" ph="{&quot;PulseLoader&quot;: PulseLoader...}" />
+                <marker date="1512764241363" expanded="true" signature="8560:8644" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="8590:8640" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="8677:9994" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="8688:8784" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="8707:8739" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="8799:9039" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="8838:8881" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="8917:8957" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="8994:9035" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="9052:9900" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="9091:9482" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="9226:9324" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="9353:9474" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="9515:9895" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="9642:9737" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="9766:9887" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="9913:9992" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="9949:9988" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="10027:10506" ph="{...}" />
+                <marker date="1512764241363" expanded="true" signature="10039:10504" ph="[...]" />
+                <marker date="1512764241363" expanded="true" signature="10045:10142" ph="{&quot;name&quot;: 'tour'...}" />
+                <marker date="1512764241363" expanded="true" signature="10148:10224" ph="{&quot;name&quot;: 'landing'...}" />
+                <marker date="1512764241363" expanded="true" signature="10230:10313" ph="{&quot;name&quot;: 'aboutUs'...}" />
+                <marker date="1512764241363" expanded="true" signature="10319:10408" ph="{&quot;name&quot;: 'contactUs'...}" />
+                <marker date="1512764241363" expanded="true" signature="10414:10500" ph="{&quot;name&quot;: 'tourList'...}" />
+                <marker date="1512764241363" expanded="true" signature="10533:11010" ph="{&quot;router&quot;: router...}" />
+                <marker date="1512764241363" expanded="true" signature="10568:10614" ph="{&quot;myHeader&quot;: myHeader...}" />
+                <marker date="1512764241363" expanded="true" signature="10673:11003" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="10712:10741" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="10792:10931" ph="..." />
+                <marker date="1512764241363" expanded="true" signature="10957:10984" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/assets/js/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project_vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_vue" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_vue" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da7c63c0-ee4b-4c27-8dae-bab21fb1e89b" name="Default" comment="" />
+      <created>1512763996148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1512763996148</updated>
+      <workItem from="1512763997316" duration="335000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="335000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="337" column="0" lean-forward="true" selection-start-line="337" selection-start-column="0" selection-end-line="337" selection-end-column="0" />
+          <folding>
+            <marker date="1512764241363" expanded="true" signature="21:462" ph="{&quot;template&quot;: `&#10;   &lt;b-navbar-nav&gt;&#10;      &lt;b-nav-item class=&quot;ml-3&quot; v-for = &quot;(item, key) in mainMenuOptions&quot; :key=&quot;item&quot; :to=&quot;{ name: item }&quot;&gt;{{key}}&lt;/b-nav-item&gt;&#10;  &lt;/b-navbar-nav&gt;&#10;  `...}" />
+            <marker date="1512764241363" expanded="true" signature="45:279" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="62:272" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="124:261" ph="{&quot;About Us&quot;: &quot;aboutUs&quot;...}" />
+            <marker date="1512764241363" expanded="true" signature="311:455" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="478:2721" ph="{&quot;template&quot;: `&lt;div&gt;&#10;  &lt;b-tabs class=&quot;text-center&quot;&gt;&#10;    &lt;b-tab title=&quot;Gallery&quot; active&gt;&#10;      &lt;b-carousel id=&quot;carousel1&quot;&#10;                  style=&quot;text-shadow: 1px 1px 2px ##333;&quot;&#10;                  controls&#10;                  indicators&#10;                  background=&quot;##ababab&quot;&#10;                  :interval=&quot;4000&quot;&#10;                  img-width=&quot;1024&quot;&#10;                  img-height=&quot;480&quot;&#10;                  v-model=&quot;slide&quot;&#10;                  @sliding-start=&quot;onSlideStart&quot;&#10;                  @sliding-end=&quot;onSlideEnd&quot;&#10;      &gt;&#10;&#10;        &lt;b-carousel-slide v-for='item in imageLinks' :key=&quot;item&quot; :img-src=&quot;item&quot;&gt;&#10;        &lt;/b-carousel-slide&gt;&#10;      &lt;/b-carousel&gt;&#10;  &lt;/b-tab&gt;&#10;    &lt;b-tab title=&quot;Video tour&quot; &gt;&#10;      &lt;video  class=&quot;container&quot; controls&gt;&#10;        &lt;source :src=&quot;videoUrl&quot; type=&quot;video/mp4&quot;&gt;&#10;      &lt;/video&gt;&#10;  &lt;/b-tab&gt;&#10;  &lt;/b-tabs&gt;&#10;    &lt;ul class=&quot;list-group&quot;&gt;&#10;      &lt;li class=&quot;list-group-item&quot; v-for='(item, key) in currentCity.description' v-html=&quot;key + ': ' + item&quot;&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;    &lt;div class='contact' v-if=&quot;currentCity.description&quot;&gt;Contact us &lt;router-link :to=&quot;{ name: 'contactUs' }&quot;&gt;here&lt;/router-link&gt; if you are interested!&lt;/div&gt;&#10;&#10;  &lt;/div&gt;`...}" />
+            <marker date="1512764241363" expanded="true" signature="514:1626" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="545:1308" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="580:1146" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="614:1135" ph="..." />
+            <marker date="1512764241363" expanded="false" signature="640:670" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="1087:1115" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="1177:1296" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="1220:1285" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="1336:1460" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="1650:2076" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="1663:2071" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="1740:2065" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2101:2155" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2183:2269" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2231:2263" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2284:2582" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2315:2366" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2372:2423" ph="//..." />
+            <marker date="1512764241363" expanded="true" signature="2450:2506" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2536:2578" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2596:2719" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2623:2656" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2681:2715" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="2740:3589" ph="{&quot;template&quot;: `&#10;    &lt;div class=&quot;col align-self-center&quot;&gt;&#10;        &lt;video playsinline autoplay muted loop id=&quot;video-background&quot;&gt;&#10;            &lt;source src=&quot;assets/video/landing/cover.mp4&quot; type=&quot;video/mp4&quot; /&gt;Your browser does not support the video tag. I suggest you upgrade your browser.&#10;            &lt;source src=&quot;assets/video/landing/cover.webm&quot; type=&quot;video/webm&quot; /&gt;Your browser does not support the video tag. I suggest you upgrade your browser.&#10;        &lt;/video&gt;&#10;        &lt;div class=&quot;landing-container col align-self-center&quot;&gt;&#10;        &lt;b-jumbotron header-level=&quot;4&quot; header=&quot;Cheap Happiness&quot; lead=&quot;Tour agency for you. Unforgettable journeys for affordable prices!&quot; class=&quot;landing-info&quot;&gt;&#10;          &lt;p&gt;&lt;/p&gt;&#10;          &lt;b-btn variant=&quot;danger&quot; :to=&quot;{ name: 'tourList' }&quot; size=&quot;lg&quot;&gt;Pick your trip now!&lt;/b-btn&gt;&#10;        &lt;/b-jumbotron&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;`...}" />
+            <marker date="1512764241363" expanded="true" signature="2794:3584" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="2864:3197" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="3259:3573" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="3418:3558" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="3608:4162" ph="{&quot;template&quot;: `&lt;div class=&quot;card&quot;&gt;&#10;    &lt;div class=&quot;card-body&quot;&gt;&#10;      &lt;h4 class=&quot;card-title&quot;&gt;About us&lt;/h4&gt;&#10;      &lt;p class=&quot;card-text&quot;&gt;We are travel agancy 'Super tour for you'. Our company appeared in 1999 and was the first modern agency that organizes top class journeys. If you want to travel around the world safely and worry about nothing - contact 'Super tour for you' agency. Our team of processionals will organize the bext trip for you!&lt;/p&gt;&#10;    &lt;/div&gt;&#10;    &lt;img class=&quot;card-img-bottom&quot; src=&quot;assets/img/location.png&quot; alt=&quot;Card image cap&quot;&gt;&#10;  &lt;/div&gt;`...}" />
+            <marker date="1512764241363" expanded="true" signature="3640:4158" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="3668:4064" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="4183:6544" ph="{&quot;template&quot;: `&lt;div class=&quot;row  justify-content-center&quot;&gt;&#10;  &lt;div class=&quot;col-12 col-md-6&quot;&gt;&#10;    &lt;div v-if='formSubmited'&gt;&#10;      &lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;&#10;        &lt;h4 class=&quot;alert-heading&quot;&gt;Thank you!&lt;/h4&gt;&#10;          &lt;p&gt;Your message has been sent. We will get back to you as soon as possible.&lt;/p&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;b-form v-else @submit=&quot;onSubmit&quot;&gt;&#10;      &lt;b-form-group id=&quot;exampleInputGroup1&quot;&#10;                    label=&quot;Email address:&quot;&#10;                    description=&quot;We'll never share your email with anyone else.&quot;&gt;&#10;        &lt;b-form-input id=&quot;exampleInput1&quot;&#10;                      type=&quot;email&quot;&#10;                      v-model=&quot;form.email&quot;&#10;                      required&#10;                      placeholder=&quot;Enter email&quot;&gt;&#10;        &lt;/b-form-input&gt;&#10;      &lt;/b-form-group&gt;&#10;      &lt;b-form-group id=&quot;exampleInputGroup2&quot; label=&quot;Your Name:&quot;&gt;&#10;        &lt;b-form-input id=&quot;exampleInput2&quot;&#10;                      type=&quot;text&quot;&#10;                      v-model=&quot;form.name&quot;&#10;                      required&#10;                      placeholder=&quot;Enter name&quot;&gt;&#10;        &lt;/b-form-input&gt;&#10;      &lt;/b-form-group&gt;&#10;      &lt;b-form-group id=&quot;exampleInputGroup3&quot; label=&quot;Priority:&quot;&gt;&#10;        &lt;b-form-select id=&quot;exampleInput3&quot;&#10;                      :options=&quot;priority&quot;&#10;                      required&#10;                      v-model=&quot;form.priority&quot;&gt;&#10;        &lt;/b-form-select&gt;&#10;      &lt;/b-form-group&gt;&#10;      &lt;b-form-group&gt;&#10;       &lt;b-form-textarea id=&quot;textarea1&quot;&#10;                     v-model=&quot;form.text&quot;&#10;                     placeholder=&quot;Enter something&quot;&#10;                     :rows=&quot;3&quot;&#10;                     :max-rows=&quot;6&quot;&gt;&#10;    &lt;/b-form-textarea&gt;&#10;    &lt;/b-form-group&gt;&#10;&#10;      &lt;b-form-group id=&quot;exampleGroup4&quot;&gt;&#10;        &lt;b-form-checkbox v-model=&quot;form.checked&quot; id=&quot;exampleInput4&quot;&gt;&#10;          Send me a copy of my question&#10;        &lt;/b-form-checkbox&gt;&#10;      &lt;/b-form-group&gt;&#10;      &lt;b-button type=&quot;submit&quot; variant=&quot;primary&quot;&gt;Submit&lt;/b-button&gt;&#10;    &lt;/b-form&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;`...}" />
+            <marker date="1512764241363" expanded="true" signature="4238:6108" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="4270:6099" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="4300:4517" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="4353:4506" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="4556:6088" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="4601:4970" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="4767:4948" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="5034:5276" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="5076:5254" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="5339:5548" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="5382:5526" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="5569:5810" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="5609:5790" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="5851:6008" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="5919:5986" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="6122:6436" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="6135:6432" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="6176:6288" ph="{&quot;name&quot;: ''...}" />
+            <marker date="1512764241363" expanded="true" signature="6306:6408" ph="[...]" />
+            <marker date="1512764241363" expanded="true" signature="6449:6542" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="6470:6537" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="6564:7572" ph="{&quot;template&quot;: `&lt;div class=&quot;d-flex flex-md-row flex-column justify-content-between align-items-center align-items-md-stretch&quot;&gt;&#10;      &lt;b-card :title=&quot;city.title&quot; v-for='city in toursInfo' :key=&quot;city.id&quot;&#10;              :img-src=&quot;images[city.id]&quot;&#10;              img-alt=&quot;Image&quot;&#10;              img-top&#10;              tag=&quot;article&quot;&#10;              style=&quot;max-width: 20rem;&quot;&#10;              class=&quot;mb-2&quot;&gt;&#10;        &lt;p class=&quot;card-text&quot;&gt;&#10;          {{city.description}}&#10;        &lt;/p&gt;&#10;        &lt;div slot=&quot;footer&quot;&gt;&#10;          &lt;b-button :to='{ name: city.name, params: {id: city.id }}' variant=&quot;primary&quot;&gt;Check the tour&lt;/b-button&gt;&#10;        &lt;/div&gt;    &#10;      &lt;/b-card&gt;&#10;  &lt;/div&gt;`...}" />
+            <marker date="1512764241363" expanded="true" signature="6688:7211" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="6764:7202" ph="..." />
+            <marker date="1512764241363" expanded="false" signature="6907:6924" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="6982:7026" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="7054:7182" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="7225:7401" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="7238:7397" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="7254:7390" ph="{&quot;vienna&quot;: 'assets/img/main/1.jpg'...}" />
+            <marker date="1512764241363" expanded="true" signature="7426:7475" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="7489:7570" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="7518:7566" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="7592:8052" ph="{&quot;template&quot;: `&lt;b-navbar toggleable=&quot;md&quot; type=&quot;dark&quot; variant=&quot;info&quot;&gt;&#10;  &lt;div class=&quot;container&quot;&gt;&#10;&#10;  &lt;b-navbar-toggle target=&quot;nav_collapse&quot;&gt;&lt;/b-navbar-toggle&gt;&#10;&#10;  &lt;b-navbar-brand :to=&quot;{ name: 'landing' }&quot;&gt;&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;&lt;/b-navbar-brand&gt;&#10;&#10;  &lt;b-collapse is-nav id=&quot;nav_collapse&quot;&gt;&#10;&#10;    &lt;b-navbar-nav class=&quot;ml-auto&quot;&gt;&#10;&#10;      &lt;dropdown-menu&gt;&lt;/dropdown-menu&gt;&#10;    &lt;/b-navbar-nav&gt;&#10;&#10;  &lt;/b-collapse&gt;&#10;  &lt;/div&gt;&#10;&lt;/b-navbar&gt;`...}" />
+            <marker date="1512764241363" expanded="true" signature="7608:7631" ph="{&quot;dropdownMenu&quot;: dropdownMenu...}" />
+            <marker date="1512764241363" expanded="true" signature="7698:8048" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="7724:8036" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="7915:8027" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="7951:8010" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="8072:8341" ph="{&quot;template&quot;: `&lt;footer&gt;&lt;hr&gt;&#10;    &lt;div class=&quot;container&quot;&gt;&#10;      &lt;address&gt;&amp;copy; All rights reserved 2017&lt;/address&gt;&#10;      &lt;div class=&quot;social&quot;&gt;&#10;        &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-github-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/footer&gt;`...}" />
+            <marker date="1512764241363" expanded="true" signature="8094:8337" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="8126:8325" ph="..." />
+            <marker date="1512764241363" expanded="false" signature="8143:8149" ph="©" />
+            <marker date="1512764241363" expanded="true" signature="8210:8314" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="8402:8646" ph="{&quot;template&quot;: `&lt;pulse-loader :loading=&quot;showLoader&quot; color=&quot;grey&quot; size=&quot;20px&quot; class=&quot;loader&quot;&gt;&lt;/pulse-loader&gt;`...}" />
+            <marker date="1512764241363" expanded="true" signature="8418:8439" ph="{&quot;PulseLoader&quot;: PulseLoader...}" />
+            <marker date="1512764241363" expanded="true" signature="8560:8644" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="8590:8640" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="8677:9994" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="8688:8784" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="8707:8739" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="8799:9039" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="8838:8881" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="8917:8957" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="8994:9035" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="9052:9900" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="9091:9482" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="9226:9324" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="9353:9474" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="9515:9895" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="9642:9737" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="9766:9887" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="9913:9992" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="9949:9988" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="10027:10506" ph="{...}" />
+            <marker date="1512764241363" expanded="true" signature="10039:10504" ph="[...]" />
+            <marker date="1512764241363" expanded="true" signature="10045:10142" ph="{&quot;name&quot;: 'tour'...}" />
+            <marker date="1512764241363" expanded="true" signature="10148:10224" ph="{&quot;name&quot;: 'landing'...}" />
+            <marker date="1512764241363" expanded="true" signature="10230:10313" ph="{&quot;name&quot;: 'aboutUs'...}" />
+            <marker date="1512764241363" expanded="true" signature="10319:10408" ph="{&quot;name&quot;: 'contactUs'...}" />
+            <marker date="1512764241363" expanded="true" signature="10414:10500" ph="{&quot;name&quot;: 'tourList'...}" />
+            <marker date="1512764241363" expanded="true" signature="10533:11010" ph="{&quot;router&quot;: router...}" />
+            <marker date="1512764241363" expanded="true" signature="10568:10614" ph="{&quot;myHeader&quot;: myHeader...}" />
+            <marker date="1512764241363" expanded="true" signature="10673:11003" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="10712:10741" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="10792:10931" ph="..." />
+            <marker date="1512764241363" expanded="true" signature="10957:10984" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
