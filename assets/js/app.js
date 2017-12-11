@@ -93,7 +93,6 @@ const Landing = {
     <div class="col align-self-center">
         <video playsinline autoplay muted loop id="video-background">
             <source src="assets/video/landing/cover.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="assets/video/landing/cover.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
         <div class="landing-container col align-self-center">
         <b-jumbotron header-level="4" header="Cheap Happiness" lead="Tour agency for you. Unforgettable journeys for affordable prices!" class="landing-info">
