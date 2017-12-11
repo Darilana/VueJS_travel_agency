@@ -45,7 +45,7 @@ const Tour = {
     <ul class="list-group">
       <li class="list-group-item" v-for='(item, key) in currentCity.description' v-html="key + ': ' + item"></li>
     </ul>
-    <div class='contact'>Contact us <router-link :to="{ name: 'contactUs' }">here</router-link> if you are interested!</div>
+    <div class='contact' v-if="currentCity.description">Contact us <router-link :to="{ name: 'contactUs' }">here</router-link> if you are interested!</div>
   </div>`,
     data: function () {
         return {
