@@ -1,7 +1,6 @@
 const dropdownMenu = {
     data: function () {
         return {
-            visibility: false,
             mainMenuOptions: {
                 "About Us": "aboutUs",
                 "Contact Us": "contactUs",
@@ -33,12 +32,11 @@ const Tour = {
                   @sliding-start="onSlideStart"
                   @sliding-end="onSlideEnd"
       >
-
         <b-carousel-slide v-for='item in imageLinks' :key="item" :img-src="item">
         </b-carousel-slide>
       </b-carousel>
   </b-tab>
-    <b-tab title="Video tour" >
+    <b-tab title="Video tour">
       <video  class="container" controls>
         <source :src="videoUrl" type="video/mp4">
       </video>
@@ -47,8 +45,7 @@ const Tour = {
     <ul class="list-group">
       <li class="list-group-item" v-for='(item, key) in currentCity.description' v-html="key + ': ' + item"></li>
     </ul>
-    <div class='contact' v-if="currentCity.description">Contact us <router-link :to="{ name: 'contactUs' }">here</router-link> if you are interested!</div>
-
+    <div class='contact'>Contact us <router-link :to="{ name: 'contactUs' }">here</router-link> if you are interested!</div>
   </div>`,
     data: function () {
         return {
@@ -67,19 +64,13 @@ const Tour = {
     },
 
     destroyed: function () {
-        this.$store.commit('setCurrentTour',
-            {
-                description: null,
-            });
+        this.$store.commit('setCurrentTour', { description: null });
     },
 
     computed: {
         currentCity: function () {
             return this.$store.state.currentTour;
         },
-        // ...mapGetters([
-        //   'currentCity'
-        // ])
         videoUrl: function () {
             return "assets/video/" + this.id + ".mp4";
         },
@@ -123,7 +114,7 @@ const aboutUs = {
     template: `<div class="card">
     <div class="card-body">
       <h4 class="card-title">About us</h4>
-      <p class="card-text">We are travel agancy 'Super tour for you'. Our company appeared in 1999 and was the first modern agency that organizes top class journeys. If you want to travel around the world safely and worry about nothing - contact 'Super tour for you' agency. Our team of processionals will organize the bext trip for you!</p>
+      <p class="card-text">We are travel agancy 'Cheap happiness'. Our company appeared in 1999 and was the first modern agency that organizes top class journeys. If you want to travel around the world safely and worry about nothing - contact 'Cheap Happiness' agency. Our team of processionals will organize the best trip for you!</p>
     </div>
     <img class="card-img-bottom" src="assets/img/location.png" alt="Card image cap">
   </div>`
@@ -169,6 +160,7 @@ const contactUs = {
                      v-model="form.text"
                      placeholder="Enter something"
                      :rows="3"
+                     required
                      :max-rows="6">
     </b-form-textarea>
     </b-form-group>
@@ -194,7 +186,10 @@ const contactUs = {
             },
             priority: [
                 { text: 'Select One', value: null },
-                'Urgent', 'Critical', 'Normal', 'Minor'
+                { text: 'Urgent', value: 'urgent' },
+                { text: 'Critical', value: 'critical' },
+                { text: 'Normal', value: 'normal' },
+                { text: 'Minor', value: 'minor' }
             ],
             show: true
         }
@@ -249,18 +244,12 @@ const myHeader = {
     },
     template: `<b-navbar toggleable="md" type="dark" variant="info">
   <div class="container">
-
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-
   <b-navbar-brand :to="{ name: 'landing' }"><i class="fa fa-home"></i></b-navbar-brand>
-
   <b-collapse is-nav id="nav_collapse">
-
     <b-navbar-nav class="ml-auto">
-
       <dropdown-menu></dropdown-menu>
     </b-navbar-nav>
-
   </b-collapse>
   </div>
 </b-navbar>`
@@ -280,9 +269,9 @@ const myFooter = {
             return this.$store.state.showFooter;
         }
     }
-}
+};
 
-var PulseLoader = VueSpinner.PulseLoader;
+const PulseLoader = VueSpinner.PulseLoader;
 
 const Spinner = {
     components: {
@@ -294,7 +283,7 @@ const Spinner = {
             return this.$store.state.showLoader;
         }
     }
-}
+};
 
 const store = new Vuex.Store({
     state: {
@@ -342,13 +331,8 @@ const store = new Vuex.Store({
                     commit('setShowLoader', false);
                 });
         },
-    },
-    getters: {
-        currentTour: function (state) {
-            return state.currentTour;
-        }
     }
-})
+});
 
 
 const router = new VueRouter({
